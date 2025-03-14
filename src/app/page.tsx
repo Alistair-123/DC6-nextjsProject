@@ -4,11 +4,11 @@
 async function getProducts() {
   const res = await fetch("https://dummyjson.com/products");
   const data = await res.json();
-  return data.products; // Extract the 'products' array
+  return data.products; 
 }
 
 export default async function Home() {
-  const products = await getProducts(); // Fetch server-side
+  const products = await getProducts(); 
 
   return (
     <div className="p-6">
